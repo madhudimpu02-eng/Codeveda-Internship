@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SPA</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My SPA Project</h1>
+
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('about')">About</button>
+<button onclick="showPage('contact')">Contact</button>
+
+<div id="content">
+    <h2>Welcome!</h2>
+</div>
+
+<script>
+function showPage(page) {
+
+    if(page === 'home') {
+        document.getElementById("content").innerHTML = "<h2>Home Page</h2><p>This is home</p>";
+    }
+
+    else if(page === 'about') {
+        document.getElementById("content").innerHTML = "<h2>About Page</h2><p>This is about</p>";
+    }
+
+    else {
+        document.getElementById("content").innerHTML = "<h2>Contact Page</h2><p>This is contact</p>";
+    }
+}
+</script>
+
+</body>
+</html>
